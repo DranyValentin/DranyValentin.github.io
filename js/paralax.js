@@ -11,8 +11,7 @@
 		let {scrollY} = event.currentTarget
 		let backgroundPositionY = scrollY/2
 
-		//if (scrollY < 400)
-			$body.style.backgroundPositionY = 
-					`-${backgroundPositionY}px`
+		$body.style = 
+			`background-position: 0 -${backgroundPositionY}px`
 	})
 })()
