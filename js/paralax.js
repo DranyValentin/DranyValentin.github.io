@@ -2,16 +2,13 @@
 {
 	"use strict"
 
-	const $ = selector => document.querySelector(selector)
-
-	var $body = $('body')
+	var $body = document.querySelector('.bg_paralax')
 
 	window.addEventListener("scroll", (event) =>
 	{
-		let {scrollY} = event.currentTarget
-		let backgroundPositionY = scrollY/2
+		var scrollY = event.currentTarget.scrollY
+        	var backgroundPositionY = scrollY/5 + 'px'
 
-		$body.style = 
-			`background-position: 0 -${backgroundPositionY}px`
+		$body.style.backgroundPosition = "0px " + backgroundPositionY
 	})
 })()
