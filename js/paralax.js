@@ -4,7 +4,7 @@
 
 	var $body = document.querySelector('.bg_paralax')
 
-	window.addEventListener("scroll", (event) =>
+	window.addEventListener("scroll", function(event)
 	{
 		var scrollY = event.currentTarget.scrollY
         	var backgroundPositionY = scrollY/5 + 'px'
